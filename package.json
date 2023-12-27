@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next build && next export",
-    "deploy": "npm run export && gh-pages -d out -b main -m 'Deploy to GitHub Pages'",
+    "deploy": "npm run export && gh-pages -d out -b main -m 'Deploy to GitHub Pages'"
   },
   "dependencies": {
     "next": "14.0.4",
