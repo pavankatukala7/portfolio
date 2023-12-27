@@ -1,7 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/profile' : '',
+  target: 'experimental-serverless-trace',
+  exportPathMap: function () {
+    return {
+      '/': { page: '/' },
+      // Add other routes as needed
+    };
+  },
 }
 
 module.exports = nextConfig
